@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#140d17" />
+  <title>Bizim Hikâyemiz ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="preloader" class="preloader">
+    <div class="envelope-wrap" id="openExperience" role="button" tabindex="0" aria-label="Sitemizi aç">
+      <div class="envelope"><div class="envelope-flap"></div><div class="envelope-heart">♥</div></div>
+      <p>Bizim için hazırlanan küçük bir dünya…</p>
+      <span>Dokun ve aç</span>
+    </div>
+  </div>
+
+  <canvas id="stars"></canvas>
+  <div class="aurora aurora-one"></div>
+  <div class="aurora aurora-two"></div>
+  <div id="hearts"></div>
+  <div class="iris iris-a" aria-hidden="true">⚘</div><div class="iris iris-b" aria-hidden="true">✿</div><div class="iris iris-c" aria-hidden="true">⚘</div>
+
+  <header class="topbar">
+    <a class="logo" href="#top">H & S <span>♥</span></a>
+    <nav>
+      <a href="#hikaye">Hikâyemiz</a>
+      <a href="#galeri">Anılar</a>
+      <a href="#mektup">Mektup</a>
+      <a href="#gelecek">Gelecek</a>
+    </nav>
+    <button id="musicBtn" class="icon-btn" aria-label="Müziği aç/kapat">♫</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-pad">
+      <div class="hero-content reveal">
+        <p class="eyebrow">BİRİNE DEĞİL, BİZE</p>
+        <h1>Seninle başlayan<br><em>en güzel hikâye.</em></h1>
+        <p class="hero-text">Bu sayfadaki her detay, birlikte yaşadığımız küçük anların kocaman bir hikâyeye dönüştüğünü hatırlatsın diye.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#galeri">Anılarımıza git <span>→</span></a>
+          <button class="btn ghost" id="surpriseBtn">Sürprizime bak <span>✦</span></button>
+        </div>
+      </div>
+
+      <div class="hero-polaroid reveal delay-2">
+        <div class="photo-frame tilt-left"><img src="assets/photo-1.jpg" alt="Bizim fotoğrafımız" onerror="this.src='assets/placeholder.svg'" /><span>biz</span></div>
+        <div class="photo-frame tilt-right"><img src="assets/photo-2.jpg" alt="Birlikte bir anımız" onerror="this.src='assets/placeholder.svg'" /><span>hep</span></div>
+        <div class="floating-note">“iyi ki<br>sen.”</div>
+      </div>
+    </section>
+
+    <section class="together section-pad reveal" id="hikaye">
+      <div class="section-title">
+        <p class="eyebrow">ZAMAN BİZDEN YANA</p>
+        <h2>Birlikte geçen zaman</h2>
+      </div>
+      <div class="counter-grid" id="loveCounter">
+        <div class="counter-card"><strong id="days">0</strong><span>gün</span></div>
+        <div class="counter-card"><strong id="hours">0</strong><span>saat</span></div>
+        <div class="counter-card"><strong id="minutes">0</strong><span>dakika</span></div>
+        <div class="counter-card"><strong id="seconds">0</strong><span>saniye</span></div>
+      </div>
+    </section>
+
+    <section class="story section-pad">
+      <div class="section-title reveal">
+        <p class="eyebrow">BİZİ BİZ YAPANLAR</p>
+        <h2>Hikâyemizin küçük durakları</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><div class="timeline-dot">01</div><div><span>İlk karşılaşma</span><h3>Her şeyin başladığı o gün.</h3><p>Buraya ilk tanıştığınız günü, nerede olduğunuzu ve o güne dair tek bir cümleyi yazabilirsin.</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-dot">02</div><div><span>İlk güzel an</span><h3>Birlikte gülmeye başladığımız yer.</h3><p>İlk buluşma, ilk uzun konuşma, ilk seyahat veya sadece “işte o an” dediğin bir hatıra.</p></div></article>
+        <article class="timeline-item reveal"><div class="timeline-dot">03</div><div><span>Bugün</span><h3>Hâlâ seçtiğim kişi: sen.</h3><p>Bu bölüm otomatik olarak canlı şekilde devam eden hikâyenizin bugünkü sayfası.</p></div></article>
+      </div>
+    </section>
+
+    <section class="gallery section-pad" id="galeri">
+      <div class="section-title reveal">
+        <p class="eyebrow">KÜÇÜK KARELER, KOCAMAN ANILAR</p>
+        <h2>Bizden kalanlar</h2>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-card tall reveal"><img src="assets/photo-3.jpg" alt="Anı 1" onerror="this.src='assets/placeholder.svg'"><figcaption><span>o gün</span><b>İyi ki bunu yaşamışız.</b></figcaption></figure>
+        <figure class="gallery-card reveal"><img src="assets/photo-4.jpg" alt="Anı 2" onerror="this.src='assets/placeholder.svg'"><figcaption><span>bir bakış</span><b>Her şey bir anda güzelleşti.</b></figcaption></figure>
+        <figure class="gallery-card reveal"><img src="assets/photo-5.jpg" alt="Anı 3" onerror="this.src='assets/placeholder.svg'"><figcaption><span>bir gülüş</span><b>En sevdiğim seslerden biri.</b></figcaption></figure>
+        <figure class="gallery-card wide reveal"><img src="assets/photo-6.jpg" alt="Anı 4" onerror="this.src='assets/placeholder.svg'"><figcaption><span>biz</span><b>Fotoğraflardan fazlası.</b></figcaption></figure>
+        <figure class="gallery-card reveal"><img src="assets/photo-7.jpg" alt="Anı 5" onerror="this.src='assets/placeholder.svg'"><figcaption><span>şimdi</span><b>Ve hikâye devam ediyor.</b></figcaption></figure>
+      </div>
+    </section>
+
+    <section class="reasons section-pad reveal">
+      <div class="section-title">
+        <p class="eyebrow">SANA DAİR</p>
+        <h2>Seni sevdiğim birkaç küçük şey</h2>
+      </div>
+      <div class="reasons-grid">
+        <div class="reason-card"><span>01</span><h3>Gülüşün</h3><p>En kötü günün içine bile biraz ışık bırakıyor.</p></div>
+        <div class="reason-card"><span>02</span><h3>Yanımda oluşun</h3><p>Hiçbir şey söylemesen bile “buradayım” hissini veriyorsun.</p></div>
+        <div class="reason-card"><span>03</span><h3>Sen olman</h3><p>En güzel tarafı da bu: seni başka biri gibi değil, olduğun gibi seviyorum.</p></div>
+        <div class="reason-card accent"><span>∞</span><h3>Daha yazılacak çok şey var</h3><p>Kalbimin sana dair biriktirdiği cümleler hiç bitmiyor ve ben ömrümün sonuna kadar sadece seni yazmak, sadece seninle kalmak istiyorum.</p></div>
+      </div>
+    </section>
+
+    <section class="letter section-pad" id="mektup">
+      <div class="letter-paper reveal">
+        <div class="paper-top">♥ &nbsp; SANA</div>
+        <h2>Bir mektup</h2>
+        <p>“Hayatımdaki en güzel şeylerin hepsi büyük olaylar değil. Bazen bir mesajın, bazen bir bakışın, bazen de birlikte sessizce oturmanın bile günümü değiştirdiğini fark ediyorum.</p>
+        <p>Seninle geçen zamanın bana öğrettiği en güzel şey şu: mutluluk her zaman büyük bir şey olmak zorunda değil. Bazen sadece doğru insanla aynı anda aynı yerde olmaktır.</p>
+        <p>Ve ben, bütün bu küçük anların içinde seni seçtiğim için çok mutluyum.</p>
+        <p class="signature">İyi ki varsın.<br><strong>— Ben</strong></p>
+      </div>
+    </section>
+
+    <section class="future section-pad" id="gelecek">
+      <div class="future-card reveal">
+        <div><p class="eyebrow">HENÜZ YAŞANMAYAN ANILAR</p><h2>Gelecekteki biz</h2><p>Henüz fotoğrafı olmayan anılar için burada boş bir yer bıraktım. Bir gün bu alan “hatırlıyor musun?” dediğin fotoğraflarla dolacak.</p></div>
+        <div class="future-orbit"><div class="orbit-heart">♥</div><span>01</span><span>02</span><span>03</span><span>∞</span></div>
+      </div>
+    </section>
+
+    <section class="final section-pad reveal">
+      <p class="eyebrow">SON BİR ŞEY</p>
+      <h2>Bu site bitiyor.<br><em>Hikâyemiz bitmiyor.</em></h2>
+      <button class="btn primary" id="finalBtn">Kalbime dokun ♥</button>
+      <p class="tiny">Bu butonun sürprizi var. Gerçekten var. :)</p>
+    </section>
+  </main>
+
+  <div class="modal" id="surpriseModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-box">
+      <button class="close" id="closeModal">×</button>
+      <p class="eyebrow">SADECE SENİN İÇİN</p>
+      <h2>Bugün sana söylemek istediğim şey:</h2>
+      <p id="surpriseText">Dünyadaki bütün güzel tesadüflerin içinden seni bulmuş olmak bana hâlâ inanılmaz geliyor.</p>
+      <button class="btn ghost" id="anotherBtn">Bir tane daha ♥</button>
+    </div>
+  </div>
+
+  <audio id="bgMusic" loop preload="none">
+    <source src="assets/song.mp3" type="audio/mpeg">
+  </audio>
+  <footer>Made with love · bizim hikâyemiz ✦</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
